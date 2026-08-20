@@ -117,3 +117,4 @@ You can also [get professional support for Nextcloud and the desktop client](htt
     WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
     or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License
     for more details.
+<!-- ci: verify windows-build-and-test workflow -->
