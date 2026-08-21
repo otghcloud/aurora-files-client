@@ -8,7 +8,7 @@ jobs:
   build:
     if: ${{ !github.event.pull_request.draft }}
     name: Windows Build and Test
-    runs-on: windows-2022
+    runs-on: ['self-hosted', 'windows-2022']
     env:
       CRAFT_TARGET: windows-msvc2022_64-cl
       COBERTURA_COVERAGE_FILE: ${{ github.workspace }}\cobertura_coverage\coverage.xml

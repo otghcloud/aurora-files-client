@@ -24,7 +24,7 @@ jobs:
     if: ${{ !github.event.pull_request.draft }}
     name: Block unconventional commits
 
-    runs-on: ubuntu-latest-low
+    runs-on: ['self-hosted', 'ubuntu-latest']
 
     steps:
       - name: Checkout

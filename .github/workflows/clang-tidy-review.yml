@@ -9,7 +9,7 @@ on:
 jobs:
   clang-tidy:
     if: ${{ !github.event.pull_request.draft }}
-    runs-on: ubuntu-latest
+    runs-on: ['self-hosted', 'ubuntu-latest']
     container: ghcr.io/nextcloud/continuous-integration-client-qt6:client-sid-6.10.2-2
     steps:
     - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
