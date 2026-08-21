@@ -9,7 +9,7 @@ on:
 jobs:
   comment-appimage:
     name: Create a comment with a link to the built AppImage
-    runs-on: ubuntu-latest
+    runs-on: ['self-hosted', 'ubuntu-latest']
     if: |-
       github.event.workflow_run.event == 'pull_request' &&
       github.event.workflow_run.conclusion == 'success'
